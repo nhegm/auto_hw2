@@ -23,6 +23,7 @@ class MobileBankApiTestV6 {
       // Given - When - Then
       // Предусловия
       given()
+              .baseUri("http://localhost:9999/api/v1")
           .spec(requestSpec) // со спецификацией проще (особенно когда много тестов)
       // Выполняемые действия
       .when()
